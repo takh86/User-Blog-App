@@ -1,4 +1,4 @@
-# S1 — Blog-App (Node.js + Express + MySQL)
+# Blog-App (Node.js + Express + MySQL)
 
 Ein einfaches Backend-Projekt zum Üben von **CRUD-Operationen** und grundlegender Authentifizierung mit **Node.js + Express + MySQL (mysql2)**.
 Das Projekt enthält Module für **User** und **Blog**, eine saubere Ordnerstruktur (Controllers/Services) sowie eine fertige Datenbank-Initialisierung (Seed), damit der Dienst nicht leer startet.
