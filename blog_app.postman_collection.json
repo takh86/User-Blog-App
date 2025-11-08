@@ -1,0 +1,210 @@
+{
+  "info": {
+    "name": "S1 Blog App API",
+    "_postman_id": "s1-blog-app-api-collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Users - Signup",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/users/signup",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "users",
+            "signup"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"first_name\": \"Taha\",\n  \"last_name\": \"Hussein\",\n  \"email\": \"taha@example.com\",\n  \"password\": \"123456\",\n  \"confirmPassword\": \"123456\",\n  \"gender\": \"male\",\n  \"DOB\": \"2000-01-01\"\n}"
+        }
+      }
+    },
+    {
+      "name": "Users - Login",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/users/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "users",
+            "login"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"taha@example.com\",\n  \"password\": \"123456\"\n}"
+        }
+      }
+    },
+    {
+      "name": "Users - Get by ID",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/users/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "users",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Users - Profile by ID",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/users/profile/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "users",
+            "profile",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Blogs - Get All",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/blog",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "blog"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Blogs - Get by ID",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/blog/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "blog",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Blogs - Create",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/blog",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "blog"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"New Post from Postman\",\n  \"content\": \"Hello from Postman\",\n  \"user_id\": 1\n}"
+        }
+      }
+    },
+    {
+      "name": "Blogs - Update",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/blog/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "blog",
+            "1"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"New Title\",\n  \"content\": \"Updated content\"\n}"
+        }
+      }
+    },
+    {
+      "name": "Blogs - Delete",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "http://localhost:3000/blog/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "blog",
+            "1"
+          ]
+        }
+      }
+    }
+  ]
+}
